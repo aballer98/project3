@@ -1,267 +1,143 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-        <link rel="stylesheet" href="css/style.css"> 
-        <title>Document</title>
+	<title>feedback form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div class="container">
+	<div id="container">
+		<div class="header">
+			<h1>Let's talk</h1>
+			<p>HTML + CSS.</p>
+		</div>
+		<div class="head1">
+			<h2>1. Personal information</h2>
+			<hr>
+		</div>
+		<form>
 
-        <form class="well form-horizontal" action=" " method="post"  id="contact_form">
-    <form>
-    
-    <!-- Form Name -->
-    
-         <h1 id="main">Let's talk</h1>
+			<div class="grid-a">
+				
+					<div class="d1">
+						<div>
+						<input type="text" name="fname" placeholder="Full name*"></div>
+						<div><input type="number" name="phonenumber" placeholder="Phone*"></div>
+					</div>
+					<div class="d2">
+						<input type="email" name="email" placeholder="E-mail*">
+						<input type="email" name="email" placeholder="Re-enter e-mail*">
+					</div>
+				
+				<div class="d3">
+					<input type="text" name="add" placeholder="Address*"/>
+					<input type="text" name="add">
+					
+				</div>
+				<div class="d4">
+					<input type="text" name="city" placeholder="City*">
+					<input type="text" name="State" placeholder="State">
+					<input type="text" name="Country" placeholder="Country/Region*">
+					<input type="text" name="State" placeholder="Zip/Postal code">
+				</div>
+				<div class="d5">
+					<input type="text" name="text" placeholder="How did you hear about us">
+				</div>
+				<div class="head1">
+					<h2>2. Skills and location</h2>
+					<hr>
+				</div>
+				<div class="content2-1">
+					<h5>Which is your primary design discipline?</h5>
+				</div>
+				<div class="content2-2">
+				
+					<div>
+						<input type="radio" name="radio" id='test' hidden>
+						<label  class="label" for='test'>Design Research</label>
+					</div>
+					<div>
+						<input type="radio" name="radio" id="test1" hidden>
+						<label class="label"  for='test1'>Visual Design</label>
+					</div>
+					<div>
+						<input type="radio" name="radio" id="test2" hidden>
+						<label class="label"  for='test2'>UX Design</label>
+					</div>
+					<div>
+						<input type="radio" name="radio" id="test3" hidden>
+						<label  class="label" for='test3'>Front-end Dev</label>
+					</div>
+				</div>
 
+				<div class="d6">
+					<div class="d7">
+						<h5>Do you have experience with any other disciplines?</h5>
+						<label class="container">Visual Design
+                                      <input type="checkbox">
+                                     <span class="checkmark"></span>
+                                </label>
+                                <label class="container">UX Design
+                                      <input type="checkbox">
+                                     <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Front-end Development
+                                      <input type="checkbox">
+                                     <span class="checkmark"></span>
+                                </label>
+		
+					</div>
+					<div class="d8">
+						<h5>What are you interested in working?*</h5>
+						<h6>You must be legally authorized to work without visa sponsership in the location(s) you chooze.</h6>
+				
+						
+                                <label class="container">New York, New York
+                                      <input type="checkbox">
+                                     <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Toronto, Canada
+                                      <input type="checkbox">
+                                     <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Shangai, Chaina
+                                      <input type="checkbox">
+                                     <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Dublin, Ireland
+                                      <input type="checkbox">
+                                     <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Hursley, United Kingdom
+                                      <input type="checkbox">
+                                     <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Boeblingen, Germany
+                                      <input type="checkbox">
+                                     <span class="checkmark"></span>
+                                </label>
+                                <label class="container">Something else
+                                      <input type="checkbox">
+                                     <span class="checkmark"></span>
+                                </label>
+					</div>
 
-<div>
-<h2>personal Information</h2>
-<hr>
-</div>
-<!-- Text input-->
-    
-    <div class="info">      
-            <input type="text"  placeholder="Full Name"
- required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label></label>
-             
-        </div>
-    <!-- Text input-->
-    
-    
-    <!-- Text input-->
-    <div class="info">      
-            <input  type="text" placeholder="Number" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label></label>
-          </div>
-    
-    
-    <!-- Text input-->
-           
-    <div class="group">      
-            <input type="text" placeholder="example@hotmail.com" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label></label>
-          </div>
+				</div>
+					<div class="head1">
+						<h2>3. Portfolio</h2>
+						<hr>
+						<h5>Prove you're IBM's next great designer by showing us who you are. What you've done. How you think. Tell us your story.</h5>
+					</div>
+					<div class="d9">
+						<input type="text" name="text" placeholder="Portfolio link*">
+						<textarea name="text" rows="5">Anything else (another link, availability, etc.)? 
+						</textarea>	
+					</div>
+				</div>
+					<div>
+						<button id="submit">Submit</button>
 
-
-              <!-- Text input-->
-           
-    <div class="group">      
-            <input type="text" placeholder="Re-enter" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label></label>
-          </div>
-    
-    <!-- Text input-->
-          
-    <div class="group">      
-            <input type="text" placeholder="Address" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label></label>
-          </div>
-    <!-- Text input-->
-     
-    <div class="group">      
-            <input type="text" placeholder="Paris" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label></label>
-          </div>
-    <!-- Select Basic -->
-       
-    <div class="group">      
-            <input type="text" placeholder="state" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label></label>
-          </div>
-    
-    <!-- Text input-->
-    
-    <div class="group">      
-            <input type="text" placeholder="Country Region" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label></label>
-          </div>
-    
-    <!-- Text input-->
-    <div class="group">      
-            <input type="text" placeholder="Zip/PostCode" required>
-            <span class="highlight"></span>
-            <span class="bar"></span>
-            <label></label>
-          </div>
-
-
-        <!-- Text input-->
-        <div class="form-group">
-                <h3> 2. Skills and location</h3>
-     
-     <hr id="square-hr>
-     
-     </div>
-        <!-- Text input-->
-
-      
-              <div class="form-group">
-
-                    <div class="feed-back">
-                    <div class="input-group">
-                            <textarea class="form-control" name="comment" placeholder="how did you hear about us?"></textarea>
-                  </div>
-                  </div>
-                </div>
-                
-
-
-    <!-- checkbox checks -->
-     <div class="form-group">
-         <div>
-             <p>which is your primary design discipline?</p>
-         </div>
-                               <button class="button">Design Research</button>
-                               <button class="button">Visual Design</button>
-                               <button class="button">UX Design</button>
-                               <button class="button">Front-end Dev</button>
-
-
-                        </div>
-                            
-
-<!-- first three radios -->
-
-                        
-
-
-                            <div class="all-checkboxs">
-                     
-
-                                
-                                    <div class="first-three">
-                                            <div class="">
-                                            <label>
-                                                <input type="checkbox" name="" value="" /> Visual Design
-                                            </label>
-                                        </div>
-            
-                                        <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" name="" value="" /> UX Design
-                                            </label>
-                                        </div>
-            
-                                        <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" name="" value="" /> Front-end Development
-                                                </label>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="flex-box">
-
-                                       
-
-                                    <div class="checkbox">
-                                            <label>
-                                                <input type="checkbox" name="" value="" /> Austin, Tecas
-                                            </label>
-                                        </div>
-
-                                        <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" name="" value="" /> New York, New York
-                                                </label>
-                                            </div>
-
-                                            <div class="checkbox">
-                                                    <label>
-                                                        <input type="checkbox" name="" value="" />  Toronto, Canada
-                                                    </label>
-                                                </div>
-
-                                                <div class="checkbox">
-                                                        <label>
-                                                            <input type="checkbox" name="" value="" /> Dublin, Ireland
-                                                        </label>
-                                                    </div>
-
-                                                     <div class="checkbox">
-                                                            <label>
-                                                                <input type="checkbox" name="" value="" /> Hursley, Untied Kingdom
-                                                            </label>
-                                                        </div>
-
-                                                        <div class="checkbox">
-                                                                <label>
-                                                                    <input type="checkbox" name="" value="" /> Boeblingen, Germany
-                                                                </label>
-                                                            </div>
-
-                                                            <div class="checkbox">
-                                                                    <label>
-                                                                        <input type="checkbox" name="" value="" />  Somewhere else
-                                                                    </label>
-                                                                </div>
-                            </div>    
-                        </div>
-                     
-    
-
-    <!-- Text area -->
-
-    <div class="form-group">
-           <h3> 3. Portfilio</h3>
-
-<hr>
-<p>  prove you're IBM's next great designer by showing us who you are what you'hve done. How you think.</p>
-</div>
-
-<div class="group">     
-                
-    <input type="text" required>
-    <span class="highlight"></span>
-    <span class="bar"></span>
-    <label>Portfilio link</label>
-  </div>
-
-
-
-  <div class="form-group">
-
-    <div class="feed-back">
-    <div class="input-group">
-            <textarea class="form-control" name="comment" placeholder="Anything else(another link availability.etc)? "></textarea>
-  </div>
-  </div>
-</div>
-
-
-
-
-    
-    <!-- Button -->
-    <div class="frm-group">
-      <div class="col-md-4">
-        <button type="submit" class="btn btn-warning" >submit <span class="glyphicon glyphicon-send"></span></button>
-      </div>
-    </div>
-    
-    </form>
-    </form>
-    </div>
-        </div><!-- /.container -->
+					</div>
+		</form>
+	</div>
 </body>
 </html>
